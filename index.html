@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Bookmarker</title>
+    <link rel="icon" href="./images/book.png" />
+
+ <!-- bootstrab -->
+ <link rel="stylesheet" href="./css/bootstrap.min.css">
+ <link rel="stylesheet" href="./css/all.min.css">
+
+ <!-- main style -->
+ <link rel="stylesheet" href="./css/style.css">
+
+ <!-- fonts -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+   
+<!--  inline script -->
+
+ 
+<div class="container  d-flex flex-column justify-content-center align-items-center">
+  <div class=" py-4 mt-5 Bookmarkheader  mx-auto " >Bookmarker</div>  
+  <div class=" dottedLine  justify-content-center align-items-center my-5 py-2 w-100">
+       <div class="d-flex Bookmarkheader2 m-2  justify-content-center align-items-center">  <i class="fa-solid fa-bookmark bookIcon"></i>  <div class="py-2  " >     Bookmark your favorite sites  </div>  <i class="fa-solid fa-bookmark bookIcon"></i>   </div>
+       <div class="form-group mb-1">     <label class="fw-bold" for="productName"> <i class="fa-solid fa-book-bookmark pe-2"></i>Site Name :</label>     <input type="text" class="form-control" id="sitetName">  </div>
+       <div class="form-group mb-1">  <label class="fw-bold" for="productName"> <i class="fa-solid fa-book-bookmark pe-2"></i> Site URL :</label>  <input type="text" class="form-control" id="siteURL"> </div>
+       <div class="justify-content-center align-items-center d-flex my-2"><button onclick="addSite()"    class="btn submitBtn  text-white  px-5   my-2" id="myBtn">Submit</button>    </div>
+                                                                          
+
+  </div>
+
+<div class="container mx-auto">
+<table class="table text-center">
+<thead>
+  <th>Index</th>
+  <th>Website Name  </th>
+  <th>Visit</th>
+  <th>Delete</th>
+</thead>
+<tbody id="myRow">
+
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+<!--  external script -->
+<script src="js/index.js" >   </script>
+
+ 
+</body>
+
+</html>
